@@ -2,14 +2,14 @@
     'use strict';
 
     angular
-        .module('stats')
-        .controller('StatsCtrl', StatsCtrl);
+        .module('admin')
+        .controller('AdminCtrl', AdminCtrl);
 
     /* @ngInject */
-    function StatsCtrl(machine) {
+    function AdminCtrl(machine) {
         /*jshint validthis: true */
         var vm = this;
-        vm.title = 'StatsCtrl';
+        vm.title = 'AdminCtrl';
         vm.machine = machine.stats;
         activate();
 

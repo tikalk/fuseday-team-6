@@ -4,6 +4,20 @@
 (function() {
   'use strict';
 
-  angular.module('map', []);
+  angular.module('map', [])
+
+  .config(function($stateProvider, $urlRouterProvider){
+	// $urlRouterProvider.otherwise('/');
+
+	$stateProvider
+		.state('map', {
+			url: '/map',
+			controller: 'MapCtrl',
+			controllerAs: 'vm',
+			templateUrl: 'app/map/map.tpl.html',
+		})
+
+});
+
 
 })();

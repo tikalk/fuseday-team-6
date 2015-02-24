@@ -25,7 +25,11 @@
         	return $http.get('/api/stats').then(function(res){
         		items.length = 0;
         		res.data.forEach(function (item) {
-        			items.push(item);
+        			item.lon = item.longitude;
+                    item.lat = item.latitude;
+                    item.projection = 'EPSG:4326';
+                    item.name = item.userId;
+                    items.push(item);
         		});
         	});
         }

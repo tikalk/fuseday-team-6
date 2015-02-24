@@ -11,7 +11,10 @@ angular.module('ki', [
 	'angular-jwt',
 	'angular-storage',
   'ngSanitize',
-  'openlayers-directive'
+  'openlayers-directive',
+  'admin',
+  'list',
+  'stats'
 ])
 
 .run(function(){
@@ -19,10 +22,10 @@ angular.module('ki', [
 })
 
 .config(function($stateProvider, $urlRouterProvider){
-	// $urlRouterProvider.otherwise('/campaign/list');
+	$urlRouterProvider.otherwise('/map');
 
 	// $stateProvider
-	// 	.state('dashboard', {
+	// 	.state('', {
 	// 		url: '/home',
 	// 		controller: 'CampaignCtrl',
 	// 		controllerAs: 'vm',

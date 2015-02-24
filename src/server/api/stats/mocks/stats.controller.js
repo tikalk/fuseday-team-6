@@ -1,26 +1,26 @@
+var rest = require('restler');
 var statsGetMock = require('./stats.get.mock.json');
 
 exports.index = get;
-exports.create = create;
-exports.update = update;
 
 function get (req, res) {
-	res.json(statsGetMock);
-}
+	// res.json(statsGetMock);
 
-function create (req, res) {
-	var stats = req.body;
-	stats.id = guid();
-	statsGetMock.push(stats);
-	res.json(stats);
-}
+	// return;
 
-function update (req, res) {
-	var stats = req.body;
-	var id = req.param('id');
-	var index = getIndexById(id);
-	statsGetMock.splice(index, 1, stats);
-	res.json(stats);
+	rest.get('http://10.10.10.16:8080/api/location')
+		.on('complete', handleGet)
+		.on('error', handleError);
+	
+	function handleGet (response){
+		res.json(response);
+	}
+
+	function handleError (res) {
+		res.json({
+			error: res
+		})
+	}
 }
 
 function getIndexById (id) {

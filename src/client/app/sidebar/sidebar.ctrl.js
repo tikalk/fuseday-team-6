@@ -5,9 +5,10 @@
 	/* @ngInject */
 	function SidebarCtrl($scope, $http, $state){
 		var vm = this;
+		vm.screen = '';
 		vm.items = [
-			{ label: 'List', icon: 'fa-list-th', sref : 'list' },
-			{ label: 'Grids', icon: 'fa-list', sref : 'grids', active: true }
+			{ label: 'Dashboard', icon: 'fa-dashboard fa-fw', sref : 'map' },
+			{ label: 'Server Stats', icon: 'fa-list', sref : 'stats'}
 		];
 		vm.isItemActive = isItemActive;
 
