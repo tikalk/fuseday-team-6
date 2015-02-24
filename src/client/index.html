@@ -2,11 +2,12 @@
 <html ng-app="ki">
 <head>
   <meta charset="UTF-8">
-  <title>Ful-Lap</title>
+  <title>Thor's MjoLnir</title>
 
   <link rel="stylesheet" href="bower_components/openlayers3/build/ol.css">
   <link rel="stylesheet" href="bower_components/angular-openlayers-directive/dist/angular-openlayers-directive.css">
   <link rel="stylesheet" href="app.css">
+  <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer|Devonshire' rel='stylesheet' type='text/css'>
 
   <!-- Disable browser cache -->
   <meta http-equiv="cache-control" content="max-age=0" />
@@ -27,7 +28,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">MJOLNIR v1.0</a>
+                    <a class="navbar-brand" href="index.html">
+                        <i class="fa fa-wrench"></i> MJOLNIR v1.0
+                    </a>
                 </div>
                 <!-- /.navbar-header -->
 
@@ -268,7 +271,8 @@
                 <!-- /.row -->
                 <div class="row">
 
-                    <div class="col-lg-4">
+                    <div class="col-md-12">
+                        <h1>Attacks List</h1>
                         <!-- ATTACKS -->
                         <attacks-list></attacks-list>
                         
