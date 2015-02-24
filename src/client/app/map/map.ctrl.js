@@ -1,13 +1,16 @@
 /**
  * Created by naor on 2/24/15.
  */
-(function () {
+ (function () {
   'use strict';
 
-  angular.module('map').controller('MapCtrl', function ($scope) {
-    $scope.mapProps = {
-      //latitude: 1.335690,
-      //longitude: 103.801575,
+  angular
+  .module('map')
+  .controller('MapCtrl', MapCtrl);
+
+function MapCtrl (attacks) {
+    var vm = this;
+    vm.mapProps = {
       defaults: {
         interactions: {
           mouseWheelZoom: true
@@ -19,5 +22,20 @@
         }
       }
     };
-  });
+
+    vm.currentAttack = {
+      lat: 40,
+      lon: 36,
+      zoom: 3,
+      projection: 'EPSG:4326',
+    };
+
+    vm.markers = attacks.items;
+
+    activate();
+
+    function activate () {
+      attacks.start();
+    }
+}
 })();

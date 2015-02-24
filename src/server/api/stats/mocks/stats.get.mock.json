@@ -1,0 +1,17 @@
+[
+  {
+    "name": "london",
+    "lat": 40,
+    "lon": 36,
+    "zoom": 8,
+    "projection": "EPSG:4326"
+  },
+
+  {
+    "name": "israel",
+    "lat": 33,
+    "lon": 36,
+    "zoom": 8,
+    "projection": "EPSG:4326"
+  }
+]
