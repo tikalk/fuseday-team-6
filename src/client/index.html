@@ -36,8 +36,9 @@
 
                 <ul class="nav navbar-top-links navbar-right" ng-controller="NavbarCtrl as vm">
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-wifi fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                          title="{{ vm.isOn() ? '': 'Not'}} Watching on the server">
+                            <i class="fa {{ vm.isOn() ? 'fa-wifi' : 'fa-circle-o-notch' }} fa-fw"></i>  <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-messages">
                             <li>
