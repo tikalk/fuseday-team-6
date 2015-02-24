@@ -1,5 +1,5 @@
 {
-    "cpu": 67,
-    "ram": 234,
-    "network": 55
+    "cpuUsage": 86,
+    "memoryUsage": 55,
+    "queueSize": 25
 }
