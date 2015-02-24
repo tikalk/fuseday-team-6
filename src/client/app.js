@@ -14,7 +14,8 @@ angular.module('ki', [
   'openlayers-directive',
   'admin',
   'list',
-  'stats'
+  'stats',
+  'navbar'
 ])
 
 .run(function(){
