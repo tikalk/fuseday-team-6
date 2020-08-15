@@ -3,35 +3,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var BearerStrategy = require('passport-http-bearer').Strategy
 
 var users = [
-  { id: 1, username: 'bram', password: 'team@VV3$0M3', token : null, email: 'Bram@perion.com' },
-  { id: 2, username: 'lev', password: 'team@VV3$0M3', token : null, email: 'Lev.Pickovsky@perion.com' },
-  { id: 3, username: 'tzachi', password: 'team@VV3$0M3', token : null, email: 'tzachi.baumgarten@perion.com' },
-  { id: 4, username: 'yehuda', password: 'team@VV3$0M3', token : null, email: 'Yehuda@perion.com' },
-  { id: 5, username: 'ziv', password: 'team@VV3$0M3', token : null, email: 'Ziv.Shapira@Perion.com' },
-  { id: 6, username: 'liron', password: 'team@VV3$0M3', token : null, email: 'Liron.GatKahlon@perion.com' },
-  { id: 7, username: 'boaz', password: 'team@VV3$0M3', token : null, email: 'BoazY@Perion.com' },
-  { id: 8, username: 'eddie', password: 'team@VV3$0M3', token : null, email: 'Eddie@perion.com' },
-  { id: 9, username: 'lena', password: 'team@VV3$0M3', token : null, email: 'Lena.Aronov@perion.com' },
-  { id: 10, username: 'tzvi', password: 'team@VV3$0M3', token : null, email: 'TzviK@Perion.com' },
-  { id: 11, username: 'yaron', password: 'team@VV3$0M3', token : null, email: 'Yaron.Moshe@perion.com' },
-  { id: 12, username: 'nataly', password: 'team@VV3$0M3', token : null, email: 'Nataly.Turlevsky@perion.com' },
-  { id: 13, username: 'alon', password: 'team@VV3$0M3', token : null, email: 'Alon.Kadury@Perion.com' },
-  { id: 14, username: 'ariel', password: 'team@VV3$0M3', token : null, email: 'Ariel.Zerahia@perion.com' },
-  { id: 15, username: 'ran', password: 'team@VV3$0M3', token : null, email: 'Ran.Wakshlak@perion.com' },
-  { id: 16, username: 'viki', password: 'team@VV3$0M3', token : null, email: 'Viki@perion.com' },
-  { id: 17, username: 'alex', password: 'team@VV3$0M3', token : null, email: 'Alex.Bronepolsky@perion.com' },
-  { id: 18, username: 'gal', password: 'team@VV3$0M3', token : null, email: 'Gal.Keidar@Perion.com' },
-  { id: 19, username: 'hagay', password: 'team@VV3$0M3', token : null, email: 'Hagay.Lipman@perion.com' },
-  { id: 20, username: 'offer', password: 'team@VV3$0M3', token : null, email: 'Offer.Peretz@perion.com' },
-  { id: 21, username: 'oren', password: 'team@VV3$0M3', token : null, email: 'Oren.Farhi@Perion.com' },
-  { id: 22, username: 'roy', password: 'team@VV3$0M3', token : null, email: 'Roy.Borer@perion.com' },
-  { id: 23, username: 'tal', password: 'team@VV3$0M3', token : null, email: 'Tal.Shahar@Perion.com' },
-  { id: 24, username: 'roey', password: 'team@VV3$0M3', token : null, email: 'Roey.Oren@perion.com' },
-  { id: 25, username: 'shai', password: 'team@VV3$0M3', token : null, email: 'ShaiP@Perion.com' },
-  { id: 26, username: 'michal', password: 'team@VV3$0M3', token : null, email: 'Michal.Erez@Perion.com' },
-  { id: 27, username: 'automation', password: 'team@VV3$0M3', token : null, email: '' },
-  { id: 28, username: 'anat', password: 'team@VV3$0M3', token : null, email: '' },
-  { id: 29, username: 'g', password: 'team@VV3$0M3', token : null, email: 'Gal.Noy@Perion.com' }
+  { id: 42, username: 'test', password: 'team@VV3$0M3', token : null, email: 'test@test.com' }
 ];
 
 function findById(id, fn) {
